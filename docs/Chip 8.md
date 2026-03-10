@@ -87,11 +87,16 @@ CHIP-8 has two timers. They both count down at 60 hertz until they reach 0.
 | FX65   | MEM     | reg_load(Vx, &I)              | Loads V0 to VX from memory starting at I. I unchanged.                                            |
 ### Keyboard:
 - The computers which originally used the Chip-8 Language had a 16-key hexadecimal keypad with the following layout:
-CHIP-8 pad     Keyboard
-1  2  3  C     1  2  3  4
-4  5  6  D     Q  W  E  R
-7  8  9  E     A  S  D  F
-A  0  B  F     Z  X  C  V
+| CHIP-8 | Keyboard || CHIP-8 | Keyboard |
+|--------|----------|-|--------|----------|
+| 0 | X || 8 | S |
+| 1 | 1 || 9 | D |
+| 2 | 2 || A | Z |
+| 3 | 3 || B | C |
+| 4 | Q || C | 4 |
+| 5 | W || D | R |
+| 6 | E || E | F |
+| 7 | A || F | V |
 
 ### CPU Cycle and Execution Timing Model of Chip 8:
 - At its core, CHIP-8 follows the classical fetch–decode–execute cycle common to most processor architectures. Each cycle consists of three fundamental stages.
