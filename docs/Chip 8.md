@@ -1,3 +1,4 @@
+# Chip8:
 - Chip 8 is an interpreter from the mid 1970s. Essentially it is a virtual machine.
 - developed by Joseph Weisbecker on his 1802 microprocessor
 - CHIP-8 was designed to be easy to program for and to use less memory than other programming languages like BASIC(**Beginner's All-purpose Symbolic Instruction Code**)
