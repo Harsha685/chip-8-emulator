@@ -16,7 +16,6 @@
 	- ​**​0x600 (1536 bytes):​**​ While most programs start at 0x200, programs specifically designed for the ETI 660 computer often begin at 0x600. However, for broader compatibility, starting at 0x200 is generally preferred.
 	- ​**​0xEA0 - 0xEFF (3744 - 3839 bytes):​**​ Reserved for the call stack, internal use, and other variables.
 	- ​**​0xF00 - 0xFFF (3840 - 4095 bytes):​**​ Reserved for display refresh.
-- ![[WhatsApp Image 2026-02-21 at 20.05.58.jpeg]]
 ### Registers:
 - Chip-8 has 16 general purpose 8-bit registers, usually referred to as Vx, where _x_ is a hexadecimal digit (0 through F). There is also a 16-bit register called I. This register is generally used to store memory addresses, so only the lowest (rightmost) 12 bits are usually used.
 - The VF register should not be used by any program, as it is used as a flag by some instructions.
@@ -88,7 +87,11 @@ CHIP-8 has two timers. They both count down at 60 hertz until they reach 0.
 | FX65   | MEM     | reg_load(Vx, &I)              | Loads V0 to VX from memory starting at I. I unchanged.                                            |
 ### Keyboard:
 - The computers which originally used the Chip-8 Language had a 16-key hexadecimal keypad with the following layout:
-![[1.png.jpeg|4000]]]
+CHIP-8 pad     Keyboard
+1  2  3  C     1  2  3  4
+4  5  6  D     Q  W  E  R
+7  8  9  E     A  S  D  F
+A  0  B  F     Z  X  C  V
 
 ### CPU Cycle and Execution Timing Model of Chip 8:
 - At its core, CHIP-8 follows the classical fetch–decode–execute cycle common to most processor architectures. Each cycle consists of three fundamental stages.
